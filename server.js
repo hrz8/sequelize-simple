@@ -49,4 +49,4 @@ app.delete('/todos/:id', async function(req, res) {
   res.json({ok:true});
 })
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
